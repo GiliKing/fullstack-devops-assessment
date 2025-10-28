@@ -1,4 +1,4 @@
-# 🧩 Form Builder Application
+# Form Builder Application
 
 A full-stack form builder platform built using **React** and **Laravel**, with secure user authentication powered by Laravel Sanctum.
 
