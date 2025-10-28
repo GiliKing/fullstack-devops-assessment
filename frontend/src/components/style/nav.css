@@ -1,0 +1,15 @@
+nav {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+nav span {
+    padding: 15px;
+}
+
+nav span.builder {
+    border-bottom: 2px solid #035F5B;
+}

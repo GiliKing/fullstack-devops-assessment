@@ -1,0 +1,10 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.wrapper {
+    width: 100%;
+    margin: 0px auto;
+    height: 100vh;
+}

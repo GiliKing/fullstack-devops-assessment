@@ -1,0 +1,231 @@
+
+div.groups {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.groups div.section {
+    width: 80%;
+    /* height: 350px; */
+    border-radius: 10px;
+    border: 1.5px solid #22A565;
+    background-image: url("../../asset/dot.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+
+.toggle-switch {
+  width: 40px;     
+  height: 20px;    
+  background-color: #ccc;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-switch .switch {
+  width: 16px;      
+  height: 16px;    
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left 0.3s ease;
+}
+
+.toggle-switch .switch.on {
+  left: 22px;     
+}
+
+.toggle-switch.on {
+  background-color: #4cd137;
+}
+
+div.groups div.section div.top {
+    display: flex;
+    background-color: #EDFFFA;
+    border-bottom: 1.5px solid #22A565;
+    justify-content: space-between;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+div.groups div.section div.top .reset {
+  color: red;
+  font-size: 20px;
+}
+
+div.groups div.section div.top div.toggle {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+div.groups div.section div.top div.toggle span.small {
+    font-size: 14px;
+}
+
+div.groups div.end {
+    width: 80%;
+    text-align: center;
+    margin-top: 60px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #AABDD926;
+    border: 3px solid #AABDD926;
+}
+
+div.groups div.end button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 80%;
+  cursor: pointer;
+}
+
+div.groups div.add-section {
+    width: 80%;
+    text-align: center;
+    margin-top: 60px;
+    cursor: pointer;
+    font-size: 4dvb;
+}
+
+/* Shift content when sidebar is open */
+.group-page-container .groups {
+  transition: margin-right 0.3s ease;
+}
+
+.group-page-container .groups.shifted {
+  margin-right: 700px; /* match your sidebar width */
+}
+
+/* Sidebar toggle button */
+.group-page-container .sidebar-toggle-btn {
+  position: fixed;
+  right: 1px;
+  top: 200px;
+  z-index: 1;
+  background-color: white;
+  color: black;
+  border: 1px solid lightgray;
+  padding: 20px;
+  cursor: pointer;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 8%;
+}
+
+.group-page-container .sidebar-toggle-btn span {
+  font-size: 15px;
+}
+
+/* Right-hand Sidebar */
+.group-page-container .my-sidebar-right {
+  position: fixed;
+  top: 0;
+  right: -650px; /* hidden by default, match width */
+  width: 600px;
+  height: 100%;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+.group-page-container .my-sidebar-right.open {
+  right: 0; /* visible when open */
+}
+
+.group-page-container .my-sidebar-right h3 {
+  margin-bottom: 20px;
+}
+
+.group-page-container .my-sidebar-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.group-page-container .my-sidebar-right li {
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.group-page-container .my-sidebar-right li:hover {
+  background-color: #353b48;
+}
+
+.group-page-container div.element {
+  border-bottom: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.group-page-container div.element .close {
+  cursor: pointer;
+}
+
+
+.group-page-container div.prf {
+  border-bottom: 1px solid #035F5B;
+  padding-top: 200px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.group-page-container div.list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.group-page-container div.list div.one ol,
+.group-page-container div.list div.two ol {
+  list-style-type: none;
+}
+
+.group-page-container div.groups div.main-one,
+.group-page-container div.groups div.main-two,
+.group-page-container div.groups div.main-three,
+.group-page-container div.groups div.main-four,
+.group-page-container div.groups div.main-five,
+.group-page-container div.groups div.main-six,
+.group-page-container div.groups div.main-seven,
+.group-page-container div.groups div.main-eight,
+.group-page-container div.groups div.main-nine {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.group-page-container div.groups div.main-one div.detail input,
+.group-page-container div.groups div.main-two div.detail input,
+.group-page-container div.groups div.main-three div.detail input,
+.group-page-container div.groups div.main-four div.detail input,
+.group-page-container div.groups div.main-five div.detail input,
+.group-page-container div.groups div.main-six div.detail input,
+.group-page-container div.groups div.main-seven div.detail input,
+.group-page-container div.groups div.main-eight div.detail input,
+.group-page-container div.groups div.main-nine div.detail input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: #F6F7FB;
+}
